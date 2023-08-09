@@ -102,6 +102,24 @@ module.exports = class LinkedList {
   //=========================Helpler methods end ======================//
   
   //================Opertations methods start ======================//
+  insertFirst(_data)
+  {
+      if(this.alreadyExistNode(_data)){
+        return;
+      };
+    var newNode = new LinkedListNode(_data);
+    if(this.head = null){
+      this.head = newNode;
+      this.tail = newNode;
+    }else{
+      newNode.next = this.head.next;
+      this.head = newNode;
+    }
+  
+    this.length++;
+
+    
+  }
   insertLast(_data)
   {
       if(this.alreadyExistNode(_data)){
@@ -176,6 +194,12 @@ module.exports = class LinkedList {
     }
     node=null;
         this.length--;
+
+  }
+  deleteHead(){
+    if(this.head == null) return;
+    this.head = this.head.next;
+    this.length--;
 
   }
 
