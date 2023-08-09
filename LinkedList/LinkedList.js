@@ -108,7 +108,7 @@ module.exports = class LinkedList {
         return;
       };
     var newNode = new LinkedListNode(_data);
-    if(this.head = null){
+    if(this.head == null){
       this.head = newNode;
       this.tail = newNode;
     }else{
