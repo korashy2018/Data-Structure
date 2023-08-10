@@ -2,6 +2,7 @@ const LinkedList = require('./LinkedList/LinkedList.js');
 
 const Stack = require('./Stack/Stack.js');
 
+console.log("===============Linked List==========");
 
 const list = new LinkedList(false);
 list.insertLast(5);
@@ -34,6 +35,7 @@ list.insertFirst(2001);
 
 list.printList();
 list.getListLength();
+console.log("===============stack==========");
 
 var stack = new Stack();
 console.log("is Empty : ", stack.isEmpty());
@@ -41,10 +43,12 @@ stack.push(12);
 stack.push(50);
 stack.push(60);
 stack.push(700);
+stack.print();
+
 console.log("stack size : ", stack.size());
 
 console.log("stack peek : ", stack.peek());
-console.log("stack size : ", stack.pop());
+console.log("stack POP : ", stack.pop());
 console.log("stack Peek : ", stack.peek());
 
 stack.print();
