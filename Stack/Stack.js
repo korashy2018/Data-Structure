@@ -26,6 +26,6 @@ module.exports = class Stack {
     return this.#dataList.head == null;
   }
   print() {
-    this.#dataList.printList();
+    return this.#dataList.printList();
   }
 }
