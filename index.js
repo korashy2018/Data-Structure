@@ -1,6 +1,7 @@
 const LinkedList = require('./LinkedList/LinkedList.js');
 
 const Stack = require('./Stack/Stack.js');
+const StackArray = require('./Stack/StackArray.js');
 
 console.log("===============Linked List==========");
 
@@ -39,8 +40,8 @@ console.log("===============stack==========");
 
 var stack = new Stack();
 console.log("is Empty : ", stack.isEmpty());
-stack.push(12);
-stack.push(50);
+stack.push(15);
+stack.push(16);
 stack.push(60);
 stack.push(700);
 stack.print();
@@ -52,4 +53,25 @@ console.log("stack POP : ", stack.pop());
 console.log("stack Peek : ", stack.peek());
 
 stack.print();
+console.log("===============stackArray==========");
+
+var stackArray = new StackArray();
+console.log("is Empty : ", stackArray.isEmpty());
+stackArray.push(12);
+stackArray.push(50);
+stackArray.push(60);
+stackArray.push(700);
+stackArray.print();
+
+console.log("stack size : ", stackArray.size());
+
+console.log("stack peek : ", stackArray.peek());
+console.log("stack POP : ", stackArray.pop());
+console.log("stack Peek : ", stackArray.peek());
+
+stackArray.print();
+
+
+
+
 
